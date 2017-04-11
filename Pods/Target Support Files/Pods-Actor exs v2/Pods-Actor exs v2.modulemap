@@ -1,0 +1,6 @@
+framework module Pods_Actor_exs_v2 {
+  umbrella header "Pods-Actor exs v2-umbrella.h"
+
+  export *
+  module * { export * }
+}
