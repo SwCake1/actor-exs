@@ -21,7 +21,7 @@
 			<key>Article name</key>
 			<string>Печатная машинка</string>
 			<key>File name</key>
-			<string>2</string>
+			<string>1</string>
 			<key>Video link</key>
 			<string></string>
 		</dict>
@@ -31,7 +31,7 @@
 			<key>Article name</key>
 			<string>Таблица шульте</string>
 			<key>File name</key>
-			<string>3</string>
+			<string>2</string>
 			<key>Video link</key>
 			<string></string>
 		</dict>
@@ -43,7 +43,7 @@
 			<key>Article name</key>
 			<string>Бабушкин сундук</string>
 			<key>File name</key>
-			<string>4</string>
+			<string>3</string>
 			<key>Video link</key>
 			<string></string>
 		</dict>
@@ -53,7 +53,7 @@
 			<key>Article name</key>
 			<string>Слова на букву</string>
 			<key>File name</key>
-			<string>5</string>
+			<string>4</string>
 			<key>Video link</key>
 			<string></string>
 		</dict>
@@ -65,17 +65,7 @@
 			<key>Article name</key>
 			<string>Введение</string>
 			<key>File name</key>
-			<string>7</string>
-			<key>Video link</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>009</string>
-			<key>Article name</key>
-			<string>Упражнение на свободу 1</string>
-			<key>File name</key>
-			<string>1</string>
+			<string>5</string>
 			<key>Video link</key>
 			<string></string>
 		</dict>
@@ -85,7 +75,7 @@
 			<key>Article name</key>
 			<string>Упражнение на свободу 2</string>
 			<key>File name</key>
-			<string>2</string>
+			<string>6</string>
 			<key>Video link</key>
 			<string></string>
 		</dict>
@@ -97,27 +87,7 @@
 			<key>Article name</key>
 			<string>Пяточок-улыбка</string>
 			<key>File name</key>
-			<string>6</string>
-			<key>Video link</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>006</string>
-			<key>Article name</key>
-			<string>Ложечка, трубочка, мешочек</string>
-			<key>File name</key>
-			<string>1</string>
-			<key>Video link</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>ID</key>
-			<string>007</string>
-			<key>Article name</key>
-			<string>Скороговорки</string>
-			<key>File name</key>
-			<string>2</string>
+			<string>7</string>
 			<key>Video link</key>
 			<string></string>
 		</dict>
