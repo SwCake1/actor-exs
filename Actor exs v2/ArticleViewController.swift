@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import SideMenuController
 
-final class ArticleViewController: UIViewController {
+final class ArticleViewController: UIViewController, PVCIndexDelegate {
     
     var articles: [Article]?
     var index: Int? {
@@ -89,15 +89,17 @@ final class ArticleViewController: UIViewController {
         UserDefaults.standard.set(index, forKey: "LastViewedIndex")
     }
     
+    internal func changeIndex(to value: Int?) {
+        self.index = value
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.destination is PageViewController {
             
             pageViewController = segue.destination as? PageViewController
             pageViewController?.configureWith(articles: articles, initialIndex: index)
-            pageViewController?.onIndexChanged = { [weak self] newIndex in
-                self?.index = newIndex
-            }
+            pageViewController?.delegateIndexChanging = self
         }
     }
 }

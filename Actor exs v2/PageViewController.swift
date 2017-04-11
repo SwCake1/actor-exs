@@ -8,11 +8,21 @@
 
 import UIKit
 
+protocol PVCIndexDelegate {
+    func changeIndex(to: Int?) -> ()
+}
+
 final class PageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
-    var onIndexChanged: ((Int?) -> Void)?
+    var delegateIndexChanging: PVCIndexDelegate?
     
-    private var index: Int?
+    private var index: Int? {
+        didSet {
+            if let index = index {
+                delegateIndexChanging?.changeIndex(to: index)
+            }
+        }
+    }
     private var articles: [Article]?
     
     override func viewDidLoad() {
@@ -31,7 +41,7 @@ final class PageViewController: UIPageViewController, UIPageViewControllerDataSo
         self.articles = articles
         self.index = initialIndex
     }
-
+    
     private func contentController(for index: Int) -> ContentViewController? {
         guard let articles = articles else { return nil }
         guard index >= 0 && index < articles.count else { return nil }
@@ -50,7 +60,7 @@ final class PageViewController: UIPageViewController, UIPageViewControllerDataSo
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         guard let index = index else { return nil }
-
+        
         return contentController(for: index + 1)
     }
     
@@ -58,7 +68,6 @@ final class PageViewController: UIPageViewController, UIPageViewControllerDataSo
         
         guard let currentViewController = viewControllers?.first as? ContentViewController else { return }
         index = currentViewController.index
-        onIndexChanged?(currentViewController.index)
     }
 }
 
