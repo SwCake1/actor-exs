@@ -79,7 +79,7 @@ final class ArticleViewController: UIViewController {
         guard let articlesCount = articles?.count else { return }
         guard let index = index else { return }
         
-        positionLabel.text = "\(index + 1) из \(articlesCount)"
+        positionLabel?.text = "\(index + 1) из \(articlesCount)"
     }
     
     private func updateStoredAppState() {
