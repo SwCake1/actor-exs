@@ -9,7 +9,7 @@
 			<key>Article name</key>
 			<string>Приветствие</string>
 			<key>File name</key>
-			<string>0</string>
+			<string>0.rtf</string>
 			<key>Video link</key>
 			<string>0</string>
 		</dict>
@@ -21,7 +21,7 @@
 			<key>Article name</key>
 			<string>Упражнение 1</string>
 			<key>File name</key>
-			<string>1</string>
+			<string>1.rtf</string>
 			<key>Video link</key>
 			<string></string>
 		</dict>
@@ -31,7 +31,7 @@
 			<key>Article name</key>
 			<string>Упражнение 2</string>
 			<key>File name</key>
-			<string>2</string>
+			<string>2.rtf</string>
 			<key>Video link</key>
 			<string></string>
 		</dict>
@@ -43,7 +43,7 @@
 			<key>Article name</key>
 			<string>Упражнение 3</string>
 			<key>File name</key>
-			<string>3</string>
+			<string>3.rtf</string>
 			<key>Video link</key>
 			<string></string>
 		</dict>
@@ -53,7 +53,7 @@
 			<key>Article name</key>
 			<string>Упражнение 4</string>
 			<key>File name</key>
-			<string>4</string>
+			<string>4.rtf</string>
 			<key>Video link</key>
 			<string></string>
 		</dict>
@@ -65,7 +65,7 @@
 			<key>Article name</key>
 			<string>Упражнение 5</string>
 			<key>File name</key>
-			<string>5</string>
+			<string>5.rtf</string>
 			<key>Video link</key>
 			<string></string>
 		</dict>
@@ -75,7 +75,7 @@
 			<key>Article name</key>
 			<string>Упражнение 6</string>
 			<key>File name</key>
-			<string>6</string>
+			<string>6.rtf</string>
 			<key>Video link</key>
 			<string></string>
 		</dict>
@@ -87,7 +87,19 @@
 			<key>Article name</key>
 			<string>Упражнение 7</string>
 			<key>File name</key>
-			<string>7</string>
+			<string>7.rtf</string>
+			<key>Video link</key>
+			<string></string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>ID</key>
+			<string>100</string>
+			<key>Article name</key>
+			<string>О студии</string>
+			<key>File name</key>
+			<string>500 О студии.rtfd</string>
 			<key>Video link</key>
 			<string></string>
 		</dict>

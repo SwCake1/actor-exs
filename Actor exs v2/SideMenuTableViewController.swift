@@ -40,9 +40,9 @@ final class SideMenuTableViewController: UITableViewController {
         let csmc = sideMenuController as? CustomSideMenuController
         
         // Приветствие
-        if indexPath.section == 0 {
-            csmc?.chapter = 0 // indexPath.section + indexPath.row
-            csmc?.performSegue(withIdentifier: "Show Wellcome", sender: nil)
+        if indexPath.section == 0 || indexPath.section == 2 {
+            csmc?.chapter = indexPath.section == 0 ? 0 : 5
+            csmc?.performSegue(withIdentifier: "Show Article from Sidemenu", sender: nil)
         }
         
         // Разделы книги
@@ -52,10 +52,10 @@ final class SideMenuTableViewController: UITableViewController {
             csmc?.performSegue(withIdentifier: "Show article list", sender: nil)
         }
         
-        // Запись на курс
-        if indexPath.section == 2 && indexPath.row == 0 {
-            csmc?.performSegue(withIdentifier: "Show registration", sender: nil)
-        }
-        
+//        // Запись на курс
+//        if indexPath.section == 2 && indexPath.row == 0 {
+//            csmc?.performSegue(withIdentifier: "Show registration", sender: nil)
+//        }
+//        
     }
 }

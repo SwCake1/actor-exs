@@ -9,7 +9,7 @@
 import UIKit
 
 final class ContentViewController: UIViewController {
-
+    
     @IBOutlet weak var textView: UITextView!
     
     var article: Article?
@@ -31,10 +31,22 @@ final class ContentViewController: UIViewController {
     private func setArticleText() {
         
         guard let article = article else { return }
-        guard let rtf = Bundle.main.url(forResource: article.fileName, withExtension: "rtf", subdirectory: nil, localization: nil) else { return }
+        guard let fileName = Bundle.main.url(forResource: article.fileName, withExtension: nil, subdirectory: nil, localization: nil) else { return }
+        let fileExtension = fileName.pathExtension
         
         do {
-            let attributedString = try NSAttributedString(url: rtf, options: [NSDocumentTypeDocumentAttribute: NSRTFTextDocumentType], documentAttributes: nil)
+            var attributedString: NSAttributedString?
+            
+            switch fileExtension {
+            case "rtf":
+                attributedString = try NSAttributedString(url: fileName, options: [NSDocumentTypeDocumentAttribute: NSRTFTextDocumentType], documentAttributes: nil)
+                
+            case "rtfd":
+                attributedString = try NSAttributedString(url: fileName, options: [NSDocumentTypeDocumentAttribute: NSRTFDTextDocumentType], documentAttributes: nil)
+                
+            default:
+                break
+            }
             textView.attributedText = attributedString
         } catch {
             print(error.localizedDescription)

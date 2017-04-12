@@ -34,8 +34,8 @@ final class ArticlesService {
         loadFromPlist()
     }
     
-    func welcomeArticle() -> Article? {
-        return articles.first(where: { $0.chapter == 0 })
+    func firstArticleIn(chapter: Int ) -> Article? {
+        return articles.first(where: { $0.chapter == chapter })
     }
     
     func articlesIn(chapter: Int) -> [Article] {

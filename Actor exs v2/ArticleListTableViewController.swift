@@ -44,9 +44,9 @@ final class ArticleListTableViewController: UITableViewController {
     func configureContent() {
         
         // Загрузка списка разделов для конкретной главы fullArticleList из viewDidLoad()
-        if chapter <= 4 {
+//        if chapter <= 5 {
             selectedArticles = articlesService.articlesIn(chapter: chapter)
-        }
+//        }
     }
 
     // MARK: - Table view functions

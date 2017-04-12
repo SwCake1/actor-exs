@@ -18,11 +18,10 @@ final class CustomSideMenuController: SideMenuController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let lastViewedChapter = UserDefaults.standard.integer(forKey: "LastViewedChapter")
-        if lastViewedChapter == 0 {
-            performSegue(withIdentifier: "Show Wellcome", sender: nil)
+        chapter = UserDefaults.standard.integer(forKey: "LastViewedChapter")
+        if chapter == 0 || chapter == 5 {
+            performSegue(withIdentifier: "Show Article from Sidemenu", sender: nil)
         } else {
-            chapter = lastViewedChapter
             performSegue(withIdentifier: "Show article list", sender: nil)
         }
         
@@ -64,14 +63,14 @@ final class CustomSideMenuController: SideMenuController {
                 ArticleListTableVC.tableView.deselectRow(at: indexPath, animated: false)
             }
             
-        case "Show Wellcome":
+        case "Show Article from Sidemenu":
             
             let articlesService = ArticlesService.sharedInstance
             let destinationVC = segue.destination as! UINavigationController
             let articleVC = destinationVC.visibleViewController as! ArticleViewController
             
-            guard let welcomeArticle = articlesService.welcomeArticle() else { return }
-            articleVC.articles = [welcomeArticle]
+            guard let article = articlesService.firstArticleIn(chapter: chapter) else { return }
+            articleVC.articles = [article]
             articleVC.index = 0
         default: break
         }

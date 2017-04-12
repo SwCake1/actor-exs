@@ -25,6 +25,7 @@
 		F578D7241E9D23570059E6A6 /* 5.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F578D71C1E9D23570059E6A6 /* 5.rtf */; };
 		F578D7251E9D23570059E6A6 /* 6.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F578D71D1E9D23570059E6A6 /* 6.rtf */; };
 		F578D7261E9D23570059E6A6 /* 7.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F578D71E1E9D23570059E6A6 /* 7.rtf */; };
+		F578D7281E9E26230059E6A6 /* 500 О студии.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = F578D7271E9E26230059E6A6 /* 500 О студии.rtfd */; };
 		F5B199241E55AFA00037AA62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B199231E55AFA00037AA62 /* AppDelegate.swift */; };
 		F5B199291E55AFA00037AA62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B199271E55AFA00037AA62 /* Main.storyboard */; };
 		F5B1993A1E55B0D10037AA62 /* ArticleListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B199391E55B0D10037AA62 /* ArticleListTableViewController.swift */; };
@@ -54,6 +55,7 @@
 		F578D71C1E9D23570059E6A6 /* 5.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = 5.rtf; path = Articles/5.rtf; sourceTree = "<group>"; };
 		F578D71D1E9D23570059E6A6 /* 6.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = 6.rtf; path = Articles/6.rtf; sourceTree = "<group>"; };
 		F578D71E1E9D23570059E6A6 /* 7.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = 7.rtf; path = Articles/7.rtf; sourceTree = "<group>"; };
+		F578D7271E9E26230059E6A6 /* 500 О студии.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = "500 О студии.rtfd"; path = "Articles/500 О студии.rtfd"; sourceTree = "<group>"; };
 		F5B199201E55AFA00037AA62 /* Actor exs v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Actor exs v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B199231E55AFA00037AA62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5B199281E55AFA00037AA62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				F578D71C1E9D23570059E6A6 /* 5.rtf */,
 				F578D71D1E9D23570059E6A6 /* 6.rtf */,
 				F578D71E1E9D23570059E6A6 /* 7.rtf */,
+				F578D7271E9E26230059E6A6 /* 500 О студии.rtfd */,
 			);
 			name = Articles;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				F578D7201E9D23570059E6A6 /* 1.rtf in Resources */,
 				F578D7231E9D23570059E6A6 /* 4.rtf in Resources */,
 				F578D7261E9D23570059E6A6 /* 7.rtf in Resources */,
+				F578D7281E9E26230059E6A6 /* 500 О студии.rtfd in Resources */,
 				F51065921E683656006D2EF1 /* Contents.plist in Resources */,
 				F578D71F1E9D23570059E6A6 /* 0.rtf in Resources */,
 				F578D7251E9D23570059E6A6 /* 6.rtf in Resources */,
