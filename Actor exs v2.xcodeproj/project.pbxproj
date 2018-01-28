@@ -130,19 +130,35 @@
 		F5B199221E55AFA00037AA62 /* Actor exs v2 */ = {
 			isa = PBXGroup;
 			children = (
-				F5FF466D1E6C33510098F3E9 /* Articles */,
 				F51ABBE01E5CB2920073341F /* Controllers */,
+				F5C0FC0D201E1CBD001E7C30 /* Classes */,
+				F5C0FC0C201E1C91001E7C30 /* Resources */,
 				F5B199231E55AFA00037AA62 /* AppDelegate.swift */,
-				F53777EB1E92703C00D919DC /* Article.swift */,
-				F5FF466B1E6C2CCB0098F3E9 /* ArticlesService.swift */,
-				F530D3381E7AD3F20047073A /* Constants.swift */,
 				F5B199271E55AFA00037AA62 /* Main.storyboard */,
-				F555ED5D1E634BD6007DFFB4 /* Media.xcassets */,
-				F51065911E683656006D2EF1 /* Contents.plist */,
 				F5B199321E55AFA00037AA62 /* Info.plist */,
 				F5C8A4161E92B22A00632004 /* Launch Screen.storyboard */,
 			);
 			path = "Actor exs v2";
+			sourceTree = "<group>";
+		};
+		F5C0FC0C201E1C91001E7C30 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5FF466D1E6C33510098F3E9 /* Articles */,
+				F555ED5D1E634BD6007DFFB4 /* Media.xcassets */,
+				F51065911E683656006D2EF1 /* Contents.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5C0FC0D201E1CBD001E7C30 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F53777EB1E92703C00D919DC /* Article.swift */,
+				F5FF466B1E6C2CCB0098F3E9 /* ArticlesService.swift */,
+				F530D3381E7AD3F20047073A /* Constants.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		F5FF466D1E6C33510098F3E9 /* Articles */ = {
@@ -159,6 +175,7 @@
 				F578D7271E9E26230059E6A6 /* 500 О студии.rtfd */,
 			);
 			name = Articles;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
